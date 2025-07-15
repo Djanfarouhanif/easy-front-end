@@ -1,0 +1,39 @@
+<div class="content relative min-h-screen flex items-center justify-center overflow-hidden" style="min-height: 100vh;">
+  <div class="absolute top-0 right-0 left-0 flex justify-between pointer-events-none select-none">
+    <img class="w-1/2 h-1/2 filter blur-sm" src="/background/image.png" alt="">
+  </div>
+
+  <div class="flex  flex-col md:flex-row justify-center items-center gap-8 w-full max-w-5xl">
+    <!-- Bloc principal avec effet glassmorphisme -->
+    <div class="relative z-10 max-h-[70vh] flex flex-col  w-full md:w-1/2 max-w-2xl px-8 py-16 rounded-3xl">
+      <h1
+        class="text-4xl h-[50px] text-start  md:text-6xl font-bold  text-white drop-shadow-lg min-h-[80px] min-w-[320px]">
+        <span class="typewriter"></span><span
+          class="easy bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent"></span>
+      </h1>
+      <p class="split-text text-lg md:text-2xl  text-gray-200 mb-8">La plateforme intelligente pour générer, gérer et
+        sécuriser vos documents juridiques en toute simplicité.</p>
+     
+
+      <!-- Bouton Generate -->
+      <div class="button-wrap">
+        <button id="generate-btn">
+          <span class="text-white font-semibold">Generate</span>
+        </button>
+        <div class="button-shadow"></div>
+      </div>
+
+
+    </div>
+
+    <!-- Bloc images aligné à la même hauteur -->
+    <div class="relative flex items-center justify-end h-[300px] w-full md:w-1/2">
+      <!-- Boule grande -->
+      <div class="flex items-center justify-end h-full w-full">
+        <img class="w-full  object-contain z-0" src="/background/gif.gif" alt="boule décorative">
+      </div>
+      <!-- Asset placé au-dessus de la boule -->
+      <!-- <img class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/3 w-32 md:w-40 lg:w-48 z-10" src="/background/glace.png" alt="asset décoratif"> -->
+    </div>
+  </div>
+</div>
