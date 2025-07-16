@@ -11,6 +11,7 @@ import { LandingHeaderComponentComponent } from './components/landing-header-com
 import { LandingHeroComponentComponent } from './components/landing-hero-component/landing-hero-component.component';
 import { LandingPricingComponentComponent } from './components/landing-pricing-component/landing-pricing-component.component';
 import { LandingTestimonialsComponentComponent } from './components/landing-testimonials-component/landing-testimonials-component.component';
+import { SuccessPayementComponent } from './components/success-payement-component/success-payement.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { LandingTestimonialsComponentComponent } from './components/landing-test
     LandingHeroComponentComponent,
     LandingPricingComponentComponent,
     LandingTestimonialsComponentComponent,
+    SuccessPayementComponent
   ],
   imports: [CommonModule, GuestRoutingModule],
   exports: [
