@@ -1,0 +1,36 @@
+ <!-- Panneau latéral : Chat & transcript -->
+  <aside class="w-full md:w-96 h-[60vh] md:h-full bg-black/40 backdrop-blur-lg rounded-l-3xl md:rounded-3xl flex flex-col justify-end p-4 overflow-y-auto transition-all duration-300 absolute md:static right-0 bottom-0 z-20">
+    <div class="flex flex-col gap-3">
+      <!-- Message utilisateur -->
+      <div class="flex justify-end">
+        <div class="bg-white/80 text-gray-900 rounded-xl px-4 py-2 max-w-xs shadow-md">Bonjour, peux-tu m’expliquer ce concept ?</div>
+      </div>
+      <!-- Message IA -->
+      <div class="flex justify-start">
+        <div class="bg-gradient-to-r from-blue-700 via-purple-700 to-indigo-700 text-white rounded-xl px-4 py-2 max-w-xs shadow-md">Bien sûr ! Voici une explication détaillée…</div>
+      </div>
+      <!-- Animation génération -->
+      <div class="flex justify-start items-center gap-2">
+        <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+        <span class="w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-150"></span>
+        <span class="w-2 h-2 bg-indigo-400 rounded-full animate-pulse delay-300"></span>
+        <span class="text-xs text-white/60">IA rédige…</span>
+      </div>
+    </div>
+    <!-- Option lecture textuelle -->
+    <div class="mt-4 flex items-center gap-2">
+      <button class="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white shadow transition"><span class="material-icons">volume_up</span></button>
+      <span class="text-xs text-white/70">Lecture textuelle</span>
+    </div>
+  </aside>
+
+  <style>
+@media (max-width: 768px) {
+  main { flex-direction: column; }
+  aside { position: absolute; bottom: 0; width: 100vw; height: 40vh; border-radius: 2rem 2rem 0 0; }
+  section { width: 100vw; height: 60vh; }
+  header, footer { padding-left: 1rem; padding-right: 1rem; }
+}
+</style>
+
+

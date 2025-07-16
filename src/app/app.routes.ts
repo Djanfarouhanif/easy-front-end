@@ -6,4 +6,7 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./features/guest/guest.module').then((m) => m.GuestModule),
   },
+  {
+    path: 'home', loadChildren: ()=> import('./features/account/account.module').then((m)=>m.AccountModule)
+  }
 ];

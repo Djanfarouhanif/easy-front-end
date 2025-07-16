@@ -1,0 +1,30 @@
+
+
+
+
+<!-- Barre supérieure (Header fixe) -->
+<app-header></app-header>
+
+<!-- Zone centrale : Avatar IA en live -->
+<main class="pt-16 pb-24 flex flex-col md:flex-row h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative">
+
+   <!-- Zone vidéo IA -->
+  <div class="flex-1 ">
+   <app-video></app-video>
+  </div>
+
+  <app-chat></app-chat>
+
+</main>
+
+<app-controle></app-controle>
+<!-- Responsive mobile : Adaptation -->
+<style>
+@media (max-width: 768px) {
+  main { flex-direction: column; }
+  aside { position: absolute; bottom: 0; width: 100vw; height: 40vh; border-radius: 2rem 2rem 0 0; }
+  section { width: 100vw; height: 60vh; }
+  header, footer { padding-left: 1rem; padding-right: 1rem; }
+}
+</style>
+
